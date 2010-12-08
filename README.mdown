@@ -1,0 +1,42 @@
+# Avatarizer
+
+A Raphael JS based library to generate user Avatars with a simplified
+set of options.
+
+## Requirements
+
+The only requirement is the raphaeljs library <http://raphaeljs.com/>
+
+## Usage
+
+Call the avatar constructor function with the element id (without any
+selector) the width and height and an options object.
+
+    avatar = new Avatar('avatar', 200, 200, {
+      label:          'Paco',
+      skinColor:      'white',  // options: white, black, brown
+      faceType:       'oblong', // options: oblong, round, rectangle, heart
+      faceExpression: 'young',  // options: young, aged, old
+      gender:         'male',   // options: male, female
+      hairType:       'type1',  // options: type1 through type4
+      eyesType:       'type1',  // options: type1 through type4
+      mouthType:      'type1',  // options: type1 through type4
+      noseType:       'type1'   // options: type1 through type4
+    });
+
+## Todo
+
++ Finish extracting all the possible paths
++ Provide a way to have a facial hair option
++ Accessories
+
+## Acknowledgements
+
+Special thanks to Raul for providing the source images and helping
+extract the SVG paths to the Avatar data source.
+
+## Copyright
+
+Copyright © 2010 @kidpollo
+
+

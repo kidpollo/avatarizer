@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="css/app.css" type="text/css" charset="utf-8">
+</head>
+  <body>
+    <div id="avatar"></div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/raphael.js"></script>
+    <script type="text/javascript" src="../avatarizer.js"></script>
+    <script type="text/javascript">
+      jQuery(function () {
+        avatar = new Avatar('avatar', 200, 200, {
+          label:          'Paco',
+          skinColor:      'white',  // options: white, black, brown
+          faceType:       'oblong', // options: oblong, round, rectangle, heart
+          faceExpression: 'young',  // options: young, aged, old
+          gender:         'male',   // options: male, female
+          hairType:       'type1',  // options: type1 through type4
+          eyesType:       'type1',  // options: type1 through type4
+          mouthType:      'type1',  // options: type1 through type4
+          noseType:       'type1'   // options: type1 through type4
+        });
+      });
+    </script>
+  </body>
+</html>
